@@ -1,5 +1,16 @@
 # Twilio Provider
 
+## Steps for building at CfA
+1. install go
+2. set $GOPATH to some directory (make sure it exists)
+3. go get github.com/tdooner/terraform-provider-twilio
+4. cd $GOPATH/src/github.com/hashicorp/terraform
+5. git checkout v0.9.2
+6. cd $GOPATH/src/github.com/tdooner/terraform-provider-twilio/
+7. this will create a binary in $GOPATH/bin, upload it as a new release
+
+
+## Original Documentation:
 The provider configuration block accepts the following arguments:
 
 * ``account_sid`` - (Required) Your SID (application ID) for the the Twilio API. May alternatively be set via the
